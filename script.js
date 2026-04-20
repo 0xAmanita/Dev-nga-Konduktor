@@ -24,6 +24,23 @@ const locations = [
   { id: "ecoland", name: "Ecoland Terminal Crossing" },
   { id: "almendras", name: "Almendras Gym" },
   { id: "roxas", name: "Roxas" },
+  { id: "acacia", name: "Acacia" },
+  { id: "ddc", name: "Davao Doc" },
+  { id: "sandawa", name: "Crossing Sandawa" },
+  { id: "maa", name: "Ma-a Crossing" },
+  { id: "tulip", name: "Tulip Drive" },
+  { id: "sabongan", name: "Matina Sabongan" },
+  { id: "matina2", name: "Matina Crossing" },
+  { id: "tahimik2", name: "Tahimik Avenue" },
+  { id: "bangkal2", name: "Bangkal" },
+  { id: "bypass-ulas", name: "Bypass Ulas" },
+  { id: "bypass-puan", name: "Bypass Puan" },
+  { id: "green-hills", name: "Green Hills" },
+  { id: "pag-ibig2", name: "Pag-Ibig" },
+  { id: "pequeno2", name: "Crossing Cat Peq" },
+  { id: "meadows2", name: "Green Meadows" },
+  { id: "mintal-simbahan2", name: "Mintal Catholic Church" },
+  { id: "mntal-elem2", name: "Mintal Elementary School" },
 ];
 
 // Create index map (id → position in route)
