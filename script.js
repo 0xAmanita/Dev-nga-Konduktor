@@ -3,6 +3,7 @@
 // Jeepney Kondoktor fare calculator
 
 document.getElementById("calculateBtn").addEventListener("click", calculateFare);
+document.getElementById("discount").addEventListener("click", calculateDiscount);
 
 // Locations (One Way)
 // Roxas - Mintal not yet implemented
@@ -81,4 +82,23 @@ function calculateFare() {
   }
 
   result.textContent = `Distance: ${distance} | Fare: ₱${fare}`;
+  console.log(`Fare: Php ${fare}`);
+  return { distance, fare };
+}
+
+// Apply student/senior discount 
+function calculateDiscount() {
+    const DISCOUNT_RATE = 0.2;
+
+    const data = calculateFare();
+    if (!data) return;
+
+    // Calculate Discount
+    discountedFare =  Math.ceil(data.fare - (data.fare * DISCOUNT_RATE));
+    
+    const result = document.getElementById("result");
+
+    // console.log(`Discounted: ${discountedFare}`);
+
+    result.textContent = `Distance: ${data.distance} | Discounted Fare: Php ${discountedFare}`;
 }
